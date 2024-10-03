@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mannath Hostel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Custom form styles */
+    .form-container {
+      background-color: #f8fafc; /* Light background */
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-input, .form-select {
+      border: 2px solid #cbd5e1; /* Custom border color */
+      border-radius: 8px;
+      padding: 12px;
+      transition: border-color 0.3s;
+    }
+
+    .form-input:focus, .form-select:focus {
+      border-color: #2563eb; /* Blue border on focus */
+      outline: none;
+    }
+
+    .form-label {
+      font-weight: bold;
+      color: #374151; /* Dark text color */
+      display: block; /* Make the label a block element for left alignment */
+      text-align: left; /* Align text to the left */
+      margin-bottom: 8px; /* Add some space below the label */
+    }
+
+    .form-button {
+      background-color: #2563eb; /* Blue background */
+      color: #fff; /* White text */
+      font-weight: bold;
+      padding: 12px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .form-button:hover {
+      background-color: #1d4ed8; /* Darker blue on hover */
+    }
+  </style>
+</head>
+<body class="font-sans">
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-screen" style="background-image: url('images/background.jpg');">
+    <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+      <div class="text-center text-white">
+        <h1 class="text-5xl font-bold">Comfortable Stay, Delicious Food, and Impeccable Hygiene</h1>
+        <p class="mt-4 text-lg">A hostel designed for your comfort and safety.</p>
+        <div class="mt-6">
+          <a href="#rooms" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg">Explore Rooms</a>
+          <a href="#enquiry" class="ml-4 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-lg shadow-lg">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-semibold text-gray-800">About Us</h2>
+      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+        Our hostel prioritizes cleanliness, comfort, and delicious food. We provide high-quality accommodations with a focus on hygiene, offering a relaxing stay for every traveler.
+      </p>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" class="py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-semibold text-gray-800">Our Rooms</h2>
+      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+        Choose from our range of rooms that cater to different needs and budgets.
+      </p>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Room 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="images/single.jpg" alt="Room 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800">Single Room</h3>
+            <p class="mt-2 text-gray-600">A cozy room perfect for solo travelers, equipped with modern amenities.</p>
+            <a href="#enquiry" class="inline-block mt-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Room 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="images/double.jpg" alt="Room 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800">Double Room</h3>
+            <p class="mt-2 text-gray-600">A spacious room with a comfortable double bed, perfect for couples or friends.</p>
+            <a href="#enquiry" class="inline-block mt-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Room 3 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="images/dorm.jpeg" alt="Room 3" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800">Dormitory</h3>
+            <p class="mt-2 text-gray-600">A budget-friendly shared room with clean beds and lockers for security.</p>
+            <a href="#enquiry" class="inline-block mt-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food Section -->
+  <section id="food" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-semibold text-gray-800">Delicious Food at Mannath Hostel</h2>
+      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+        We offer a range of hygienic and delicious meals made from fresh, locally sourced ingredients.
+      </p>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="images/breakfast.jpg" alt="Meal 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800">Breakfast</h3>
+            <p class="mt-2 text-gray-600">Start your day with a hearty, hygienic breakfast.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="images/lunch.jpg" alt="Meal 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800">Lunch</h3>
+            <p class="mt-2 text-gray-600">Enjoy a healthy and hygienic lunch made with care.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="images/dinner.jpg" alt="Meal 3" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800">Dinner</h3>
+            <p class="mt-2 text-gray-600">Relax with a satisfying dinner, prepared with hygiene in mind.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inquiry Form Section -->
+  <section id="enquiry" class="py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-semibold text-gray-800">Make an Inquiry</h2>
+      <p class="mt-4 text-gray-600">Fill out the form below to inquire about bookings and availability.</p>
+
+      <form class="mt-10 max-w-lg mx-auto form-container p-6">
+        <div class="mb-4">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" id="name" name="name" required class="form-input w-full" placeholder="Your Name">
+        </div>
+
+        <div class="mb-4">
+          <label for="address" class="form-label">Address</label>
+          <input type="text" id="address" name="address" required class="form-input w-full" placeholder="Your Address">
+        </div>
+
+        <div class="mb-4">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required class="form-input w-full" placeholder="Your Phone Number">
+        </div>
+
+        <div class="mb-4">
+          <label for="room" class="form-label">Type of Room</label>
+          <select id="room" name="room" required class="form-select w-full">
+            <option value="">Select a room type</option>
+            <option value="single">Single Room</option>
+            <option value="double">Double Room</option>
+            <option value="dorm">Dormitory</option>
+          </select>
+        </div>
+
+        <button type="submit" class="form-button">Submit Inquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-100 py-10">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Mannath Hostel. All rights reserved.</p>
+      <div class="mt-4">
+        <a href="#" class="mx-2 text-gray-400 hover:text-white">Facebook</a>
+        <a href="#" class="mx-2 text-gray-400 hover:text-white">Twitter</a>
+        <a href="#" class="mx-2 text-gray-400 hover:text-white">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
